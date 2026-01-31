@@ -1,144 +1,84 @@
-# IT23666542 - Tamil Transliteration Testing Project
+# IT23666542
 
-## 📋 Project Overview
+A Playwright-based test automation project for testing and validation.
 
-This project contains automated test cases for validating a Tamil transliteration website ([tamil.changathi.com](https://tamil.changathi.com/)). The tests verify the accuracy of converting Thanglish (Tamil written in English letters) to Tamil script.
+## Overview
 
-## 🎯 Test Coverage
+This project contains automated test suites built with Playwright, focusing on comprehensive test case coverage and quality assurance.
 
-### Test Categories
+## Features
 
-| Category | Count | Description |
-|----------|-------|-------------|
-| **Positive Functional (Pos_Fun)** | 24 | Valid inputs where translation is expected to be perfect |
-| **Negative Functional (Neg_Fun)** | 10 | Edge cases, complex mixed language, or ambiguity scenarios |
-| **UI Tests (Pos_UI)** | 1 | Verifying real-time update capability |
-| **Total** | **35** | |
+- **Playwright Test Framework**: Modern JavaScript/TypeScript testing framework
+- **Automated Testing**: Comprehensive automated test cases
+- **Test Reporting**: Detailed test results and error documentation
+- **CI/CD Ready**: Structured for continuous integration pipelines
 
-### Test Dimensions
+## Prerequisites
 
-#### Domain Coverage
-- Daily language usage
-- Greeting/request
-- Mixed Thanglish + English
-- Slang
-- Punctuation/numbers
-- Formatting
+- Node.js (v14 or higher)
+- npm or yarn package manager
+- Git
 
-#### Grammar Coverage
-- Simple/Compound/Complex sentences
-- Interrogative
-- Imperative
-- Tense (Past/Present/Future)
-- Negation
-- Plural
+## Installation
 
-#### Length Categories
-- **S (Short)**: ≤30 characters
-- **M (Medium)**: 31-299 characters
-- **L (Long)**: ≥300 characters
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/IT23666542.git
+cd IT23666542
+```
 
-## 🛠️ Technology Stack
+2. Install dependencies:
+```bash
+npm install
+```
 
-- **Test Framework**: [Playwright](https://playwright.dev/)
-- **Language**: TypeScript
-- **Runtime**: Node.js
-- **Documentation**: Excel (Test Cases)
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 IT23666542/
-├── IT23666542.spec.ts          # Main test file with 35 test cases
-├── Assignment 1 - Test cases-2.xlsx  # Excel documentation
-├── package.json                # Node.js dependencies
-├── .gitignore                  # Git ignore rules
-└── README.md                   # This file
+├── IT23666542.spec.ts      # Main test specification file
+├── package.json             # Project dependencies
+├── .gitignore              # Git ignore configuration
+├── test-results/           # Test execution results
+└── README.md               # This file
 ```
 
-## 🚀 Getting Started
+## Running Tests
 
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or pnpm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<username>/IT23666542.git
-   cd IT23666542
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Install Playwright browsers:
-   ```bash
-   npx playwright install chromium
-   ```
-
-### Running Tests
-
-Run all tests:
+Execute the test suite:
 ```bash
-npx playwright test IT23666542.spec.ts
+npm test
 ```
 
-Run specific test category:
-```bash
-# Run only positive functional tests
-npx playwright test --grep "Pos_Fun"
+## Test Results
 
-# Run only negative functional tests
-npx playwright test --grep "Neg_Fun"
+Test results and error documentation are generated in the `test-results/` directory.
 
-# Run only UI tests
-npx playwright test --grep "Pos_UI"
-```
+## Configuration
 
-Run with extended timeout (for slow connections):
-```bash
-npx playwright test IT23666542.spec.ts --timeout=60000
-```
+- **Test Framework**: Playwright
+- **Test Runner**: Playwright Test
+- **Configuration**: See `playwright.config.js` (if applicable)
 
-## 📊 Test Results
+## License
 
-All 35 tests are designed to pass, validating:
-- ✅ Basic transliteration accuracy
-- ✅ Tense handling (past, present, future)
-- ✅ Negation forms
-- ✅ Plural forms
-- ✅ Mixed language (Thanglish + English)
-- ✅ Special characters and numbers
-- ✅ Slang and colloquial expressions
-- ✅ Regional dialect variations
-- ✅ Real-time UI updates
+ISC
 
-## 📝 Test Case Documentation
+## Author
 
-Detailed test case documentation is available in `Assignment 1 - Test cases-2.xlsx` with the following columns:
-- TC ID
-- Test case name
-- Input length type
-- Input (Thanglish)
-- Expected output (Tamil)
-- Actual output
-- Status
-- Accuracy justification
-- What is covered by the test
+Created for IT23666542
 
-## 👨‍💻 Author
+## Contributing
 
-**Student ID**: IT23666542
+1. Create a new branch for your feature
+2. Make your changes
+3. Push to your branch
+4. Submit a pull request
 
-## 📄 License
+## Support
 
-This project is for educational purposes as part of coursework assignment.
+For issues or questions, please open an issue in the repository.
 
 ---
 
-*Last Updated: January 2026*
+**Last Updated**: January 2026
